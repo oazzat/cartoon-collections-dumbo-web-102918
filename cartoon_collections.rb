@@ -12,8 +12,13 @@ def summon_captain_planet(array)
   end
 end
 
-def long_planeteer_calls()
-  
+def long_planeteer_calls(array)
+  array.each do |item|
+    if item.size > 4
+      return true
+    end
+  end 
+  return false
 end
 
 def find_the_cheese# code an argument here
